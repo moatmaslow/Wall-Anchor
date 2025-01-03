@@ -2496,6 +2496,36 @@
                     "source": "www.example.com"
                 }
             ]
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.8802910052910053,
+            "y": 0.6935933147632313,
+            "uniqueID": 1735935347875,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1735932007955
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 72
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Part Name"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STL"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": null,
+            "resolution": 72,
+            "importIndex": 0,
+            "fileName": null
         }
     ],
     "allConnectors": [
@@ -2554,6 +2584,13 @@
             "ap2Primary": false,
             "ap1ID": 1735931995338,
             "ap2ID": 1735931399782
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1735932007955,
+            "ap2ID": 1735935347875
         },
         {
             "ap1Name": "Geometry",
