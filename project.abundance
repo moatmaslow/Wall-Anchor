@@ -1578,7 +1578,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion",
+                    "unionType": "Assembly",
                     "unionIndex": 1
                 },
                 {
@@ -1895,6 +1895,408 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Screws",
+            "x": 0.3802910052910053,
+            "y": 0.8607242339832869,
+            "uniqueID": 1735934682991,
+            "ioValues": [],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1735934682920,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "GitHubMolecule",
+                    "name": "-6-Wood-Screw",
+                    "x": 0.09656084656084656,
+                    "y": 0.415041782729805,
+                    "uniqueID": 1735934696052,
+                    "ioValues": [],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1735934696092,
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1735934696018
+                                }
+                            ],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.0787037037037037,
+                            "y": 0.6908077994428969,
+                            "uniqueID": 1735934695622,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 3.3
+                                }
+                            ],
+                            "description": "Creates a new circle."
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.10582010582010583,
+                            "y": 0.3231197771587744,
+                            "uniqueID": 1735934695882,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 10
+                                }
+                            ],
+                            "description": "Creates a new circle."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.22552910052910055,
+                            "y": 0.6629526462395543,
+                            "uniqueID": 1735934696417,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735934695622
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": -4
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Loft",
+                            "name": "Loft",
+                            "x": 0.33201058201058203,
+                            "y": 0.37325905292479106,
+                            "uniqueID": 1735934695884,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1735934696417
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1735934695882
+                                },
+                                {
+                                    "name": "Shape 3",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1735934696417
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1735934695882
+                                },
+                                {
+                                    "name": "Shape 3",
+                                    "ioValue": ""
+                                }
+                            ],
+                            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+                            "closedSelection": 0
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.3796296296296296,
+                            "y": 0.6657381615598886,
+                            "uniqueID": 1735934696179,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735934696417
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": -35
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                        },
+                        {
+                            "atomType": "Join",
+                            "name": "Fusion",
+                            "x": 0.4722222222222222,
+                            "y": 0.33147632311977715,
+                            "uniqueID": 1735934696183,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1735934696179
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1735934695884
+                                }
+                            ],
+                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                            "unionType": "Assembly",
+                            "unionIndex": 1
+                        },
+                        {
+                            "atomType": "Add-BOM-Tag",
+                            "name": "Add BOM Tag",
+                            "x": 0.5892857142857143,
+                            "y": 0.47075208913649025,
+                            "uniqueID": 1735934695940,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735934696183
+                                }
+                            ],
+                            "description": "Adds a Bill Of Materials tag which appears in molecules containing this atom and in the GitHub project bill of materials.",
+                            "BOMitem": {
+                                "BOMitemName": "#6 Wood Screw",
+                                "numberNeeded": 1,
+                                "costUSD": 0.1,
+                                "source": "www.example.com"
+                            }
+                        },
+                        {
+                            "atomType": "Color",
+                            "name": "Color",
+                            "x": 0.7156084656084657,
+                            "y": 0.49860724233983283,
+                            "uniqueID": 1735934696018,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735934695940
+                                }
+                            ],
+                            "description": "Changes the color of the shape.",
+                            "selectedColorIndex": 18
+                        }
+                    ],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735934695622,
+                            "ap2ID": 1735934696417
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1735934695882,
+                            "ap2ID": 1735934695884
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1735934696417,
+                            "ap2ID": 1735934695884
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735934696417,
+                            "ap2ID": 1735934696179
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1735934695884,
+                            "ap2ID": 1735934696183
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1735934696179,
+                            "ap2ID": 1735934696183
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735934696183,
+                            "ap2ID": 1735934695940
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735934695940,
+                            "ap2ID": 1735934696018
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1735934696018,
+                            "ap2ID": 1735934696092
+                        }
+                    ],
+                    "parentRepo": {
+                        "repoName": "-6-Wood-Screw",
+                        "dateCreated": "2025-01-03T19:58:30Z",
+                        "readMe": "https://raw.githubusercontent.com/BarbourSmith/-6-Wood-Screw/master/README.md?sanitize=true",
+                        "yyyy": 2025,
+                        "topMoleculeID": 1735934311384,
+                        "topics": [],
+                        "githubMoleculesUsed": [],
+                        "html_url": "https://github.com/BarbourSmith/-6-Wood-Screw",
+                        "parentRepo": null,
+                        "forks": 0,
+                        "dateModified": "01/03/2025",
+                        "ranking": 0,
+                        "searchField": "-6-wood-screw barboursmith a standard #6 wood screw ",
+                        "owner": "BarbourSmith",
+                        "description": "A standard #6 wood screw",
+                        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/-6-Wood-Screw/master/project.svg?sanitize=true",
+                        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/-6-Wood-Screw/master/project.abundance?sanitize=true"
+                    },
+                    "unitsKey": "MM",
+                    "fileTypeVersion": 1,
+                    "compiledBom": [
+                        {
+                            "BOMitemName": "#6 Wood Screw",
+                            "numberNeeded": 1,
+                            "costUSD": 0.1,
+                            "source": "www.example.com"
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.11904761904761904,
+                    "y": 0.7158774373259054,
+                    "uniqueID": 1735934704869,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.23677248677248677,
+                    "y": 0.6629526462395543,
+                    "uniqueID": 1735934745572,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1735934704869
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Join",
+                    "name": "Assembly",
+                    "x": 0.4603174603174603,
+                    "y": 0.4818941504178273,
+                    "uniqueID": 1735934752327,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1735934765157
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1735934696052
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                    "unionType": "Assembly",
+                    "unionIndex": 0
+                },
+                {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 0.32605820105820105,
+                    "y": 0.7270194986072424,
+                    "uniqueID": 1735934765157,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1735934745572
+                        }
+                    ],
+                    "description": "Changes the color of the shape.",
+                    "selectedColorIndex": 21
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1735934696052,
+                    "ap2ID": 1735934752327
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1735934704869,
+                    "ap2ID": 1735934745572
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1735934745572,
+                    "ap2ID": 1735934765157
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1735934765157,
+                    "ap2ID": 1735934752327
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
