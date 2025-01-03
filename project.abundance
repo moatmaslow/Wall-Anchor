@@ -1464,6 +1464,30 @@
             "description": "Extracts geometry containing the specified tag.",
             "tag": "Plastic",
             "tagIndex": 0
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Bolt",
+            "x": 0.4470899470899471,
+            "y": 0.7688022284122563,
+            "uniqueID": 1735932365372,
+            "ioValues": [],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1735932365008,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
