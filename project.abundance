@@ -25,8 +25,8 @@
         {
             "atomType": "Molecule",
             "name": "Frame",
-            "x": 0.21626984126984128,
-            "y": 0.34540389972144847,
+            "x": 0.13955026455026454,
+            "y": 0.19220055710306408,
             "uniqueID": 1735931106340,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -921,8 +921,8 @@
         {
             "atomType": "Molecule",
             "name": "Opening",
-            "x": 0.2043650793650794,
-            "y": 0.8022284122562675,
+            "x": 0.12367724867724868,
+            "y": 0.532033426183844,
             "uniqueID": 1735931454965,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1162,8 +1162,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.40145502645502645,
-            "y": 0.7520891364902507,
+            "x": 0.2757936507936508,
+            "y": 0.49303621169916434,
             "uniqueID": 1735931630715,
             "ioValues": [
                 {
@@ -1188,8 +1188,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.5145502645502645,
-            "y": 0.6016713091922006,
+            "x": 0.38690476190476186,
+            "y": 0.18105849582172703,
             "uniqueID": 1735931667695,
             "ioValues": [
                 {
@@ -1202,6 +1202,48 @@
                 }
             ],
             "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Nut",
+            "x": 0.511904761904762,
+            "y": 0.5487465181058496,
+            "uniqueID": 1735931750604,
+            "ioValues": [],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1735931751070,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "RegularPolygon",
+                    "name": "RegularPolygon",
+                    "x": 0.30886243386243384,
+                    "y": 0.5738161559888579,
+                    "uniqueID": 1735931762716,
+                    "ioValues": [
+                        {
+                            "name": "number of sides",
+                            "ioValue": 6
+                        },
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new regular polygon. Corners are on the diameter."
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
