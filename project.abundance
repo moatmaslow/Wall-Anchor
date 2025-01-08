@@ -1514,13 +1514,13 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.14285714285714285,
-                    "y": 0.47632311977715874,
+                    "x": 0.1388888888888889,
+                    "y": 0.467966573816156,
                     "uniqueID": 1735932621948,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 15
+                            "ioValue": 17
                         }
                     ],
                     "description": "Creates a new circle."
@@ -1546,8 +1546,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.19973544973544974,
-                    "y": 0.6740947075208913,
+                    "x": 0.20304232804232802,
+                    "y": 0.6713091922005571,
                     "uniqueID": 1735932645174,
                     "ioValues": [
                         {
@@ -1596,7 +1596,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion",
+                    "unionType": "Assembly",
                     "unionIndex": 1
                 },
                 {
