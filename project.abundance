@@ -2532,7 +2532,7 @@
                 },
                 {
                     "name": "File Type",
-                    "ioValue": "STL"
+                    "ioValue": "STEP"
                 }
             ],
             "description": "Export Atom, let's you choose a type of file to Export.",
