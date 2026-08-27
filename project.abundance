@@ -2504,8 +2504,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6862559241706161,
-      "y": 0.8672839506172839,
+      "x": 0.7402843601895734,
+      "y": 0.3487654320987654,
       "uniqueID": "id-307",
       "ioValues": [
         {
@@ -2528,11 +2528,6 @@
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": 1735931399782,
-      "ap2ID": 1735930894060
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": 1735931399782,
@@ -2592,6 +2587,11 @@
       "ap2Name": "Shape 5",
       "ap1ID": 1735934682991,
       "ap2ID": 1735931399782
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-307",
+      "ap2ID": 1735930894060
     }
   ],
   "unitsKey": "MM",
